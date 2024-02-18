@@ -13,7 +13,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     system \
-    vendor
+    vendor \
+    vbmeta
 
 BOARD_USES_RECOVERY_AS_BOOT := true
 
@@ -92,6 +93,14 @@ VENDOR_SECURITY_PATCH := 2021-01-01
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
+# AVB
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit the proprietary files
 include vendor/kyocera/chatora/BoardConfigVendor.mk
