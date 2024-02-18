@@ -51,7 +51,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 ea
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := X3-KC_sprout_defconfig
-TARGET_KERNEL_SOURCE := kernel/kyocera/X3-KC_sprout
+TARGET_KERNEL_SOURCE := kernel/kyocera/msm-4.4
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
