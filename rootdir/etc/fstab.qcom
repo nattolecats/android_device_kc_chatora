@@ -1,5 +1,5 @@
 /dev/block/bootdevice/by-name/system                         /                        ext4     ro,barrier=1,discard         wait,slotselect,verify
-/dev/block/bootdevice/by-name/userdata                       /data                    ext4     nosuid,nodev,barrier=1,noauto_da_alloc,discard,noatime,lazytime     wait,check,forceencrypt=/mnt/vendor/persist/udf,crashcheck,quota,reservedsize=128M
+/dev/block/bootdevice/by-name/userdata                       /data                    ext4     nosuid,nodev,barrier=1,noauto_da_alloc,discard,noatime,lazytime     wait,check,crashcheck,quota,reservedsize=128M
 /dev/block/bootdevice/by-name/logwork                        /mnt/vendor/logwork      ext4     nosuid,nodev,barrier=1,noauto_da_alloc,discard,noatime,lazytime     wait,check,nofail
 /devices/soc/c084000.sdhci/mmc_host*                         /storage/sdcard1         vfat     nosuid,nodev          wait,voldmanaged=sdcard1:auto,encryptable=footer
 /dev/block/bootdevice/by-name/misc                           /misc                    emmc     defaults           defaults
