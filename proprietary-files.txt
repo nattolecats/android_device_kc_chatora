@@ -1828,7 +1828,6 @@ vendor/etc/camera/s5k5e9yu05_mono_chromatix.xml
 # CAS
 vendor/bin/hw/android.hardware.cas@1.1-service
 vendor/etc/init/android.hardware.cas@1.1-service.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.1-service.xml
 
 # CDSP
 vendor/bin/cdsprpcd
