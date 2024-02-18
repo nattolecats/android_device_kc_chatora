@@ -1,0 +1,5 @@
+ro.com.google.gmsversion=10_201911
+ro.opa.eligible_device=true
+ro.setupwizard.rotation_locked=true
+setupwizard.theme=glif_v3_light
+sys.fflag.override.settings_mobile_network_v2=false
