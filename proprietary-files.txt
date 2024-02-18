@@ -3076,10 +3076,10 @@ vendor/etc/init/init.fingerprint.fpc1020.rc
 vendor/etc/init/init.kc.display.rc
 vendor/etc/init/init.kc.leds.rc
 vendor/etc/init/init.kc.touch.rc
-vendor/etc/init/init.kc.usb.jp.rc
+#vendor/etc/init/init.kc.usb.jp.rc
 vendor/etc/init/init.kc.vibrator.rc
-vendor/etc/init/init.kdmc.rc
-vendor/etc/init/init.qdmastats.rc
+#vendor/etc/init/init.kdmc.rc
+#vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init/initwork.rc
 vendor/etc/init/irda.rc
