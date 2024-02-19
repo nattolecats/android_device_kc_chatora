@@ -54,6 +54,8 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := X3-KC_sprout_defconfig
 TARGET_KERNEL_SOURCE := kernel/kyocera/msm-4.4
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
