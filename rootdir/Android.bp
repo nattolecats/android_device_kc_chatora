@@ -141,3 +141,11 @@ prebuilt_etc {
     src: "etc/fstab.qcom",
     vendor: true,
 }
+
+// Recovery
+prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    src: "etc/init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
+}
