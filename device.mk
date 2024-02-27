@@ -6,6 +6,20 @@
 
 DEVICE_PATH := device/kyocera/chatora
 
+# Set Shipping API level
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 # A/B
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
@@ -17,6 +31,7 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -27,8 +42,9 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# API levels
-PRODUCT_SHIPPING_API_LEVEL := 26
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
 
 # Health
 PRODUCT_PACKAGES += \
